@@ -12,13 +12,8 @@ public class Main {
         GameSupport gameSupport = new GameSupport();
         System.out.println("Kółko czy krzyżyk ?\nOto plansza:");
 
-        board.showBoards();
-        gameSupport.whoStarts(person, computer);
-        computer.takeField(board);
-
-        gameSupport.checkFieldIsEmpty(board);
-        gameSupport.whoWon(board);
-
+        board.showEmptyBoard();
+        gameSupport.playPersonVSComputer(person, computer, board);
 
     }
 }
